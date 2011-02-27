@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Sarang Semut</title>
+	<link rel="shortcut icon" type="image/gif" href="images/ss-favicon.png">
+	<link href="css/ss-standard.css" rel="stylesheet" type="text/css" />
+	<link href="css/ss-layout.css" rel="stylesheet" type="text/css" />
+	<link href="css/ss-sidebar.css" rel="stylesheet" type="text/css" />
+	<link href="css/ss-testimonial.css" rel="stylesheet" type="text/css" />
+<!-- STYLE FOR REG-TABLE BEGIN-->
+	<style>
+			.referal { padding:0 30px 2px 0; text-align:right; }
+			.referal-mid { color:#A76A00; font-weight:bold; }
+			.referal-nama { color:#800000; font-weight:bold; }
+			.referal-nohp { color:#000080; font-weight:bold; }
+			
+			.titleError { margin:5px 0 0 0; padding:5px 10px; border:1px solid #f6dbdb; border-bottom:none; background:#f6dbdb; color:#dd0000; }
+			.msgError { margin:0 0 10px 0; padding:5px 5px; border:1px solid #f6dbdb; background:#fcf7f7; color:#dd0000; font-size:9pt; }
+			
+			.titleSuccess { margin:5px 0 0 0; padding:5px 10px; border:1px solid #e3f5e3; border-bottom:none; background:#daefda; color:#248724; }
+			.msgSuccess { margin:0 0 10px 0; padding:5px 5px; border:1px solid #daefda; background:#f9fdf9; color:#248724; font-size:9pt; }
+			
+			.titleInfo { margin:0 0 0 0; padding:5px 10px; border:1px solid #dae1ef; border-bottom:none; background:#dae1ef; color:#4b6fb8; }
+			.msgInfo { margin:0 0 10px 0; padding:5px 5px; border:1px solid #dae1ef; background:#f2f5fc; color:#4b6fb8; font-size:9pt; }
+	</style>
+<!-- STYLE FOR REG-TABLE END-->
+</head>
+<body>
+	<div class="container">
+	<!-- HEADER -->
+		<div class="header">
+		<!-- LOGO -->
+			<div class="logo">
+				<div class="logo-left"></div>
+				<div class="logo-right">
+					<div class="logo-ss">
+						<object width="565" height="90" align="middle">
+							<param name="movie" value="images/animasi/ss-animasi-tagline.swf">
+							<param name="quality" value="high" /><param name="scale" value="noborder" />
+							<param name="wmode" value="transparent" /><param name="bgcolor" value="#ffffff" />
+							<embed src="images/animasi/ss-animasi-tagline.swf" scale="noborder" wmode="transparent" bgcolor="#fff" width="565" height="90" align="middle" type="application/x-shockwave-flash"  />
+							</embed>
+						</object>
+					</div>
+					<div class="logo-animasi">
+						<object width="565" height="80" align="middle">
+							<param name="movie" value="images/animasi/ss-animasi.swf">
+							<param name="quality" value="high" /><param name="scale" value="noborder" />
+							<param name="wmode" value="transparent" /><param name="bgcolor" value="#ffffff" />
+							<embed src="images/animasi/ss-animasi.swf" scale="noborder" wmode="transparent" bgcolor="#fff" width="565" height="80" align="middle" type="application/x-shockwave-flash"  />
+							</embed>
+						</object>
+					</div>
+				</div>
+			</div>
+		<!-- MENU -->
+			<div class="menu">
+				<table cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td width="235px" height="45px"><img src="images/menu-left.png" alt="" /></td>
+						<td>
+							<div class="link">
+								<ul>
+									<li><a href="ss-index-mainweb.html" title="home">Home</a></li>
+									<li><a href="#" title="register">Register</a></li>
+									<li><a href="#" title="company profile">Company Profile</a></li>
+									<li><a href="#" id="current" title="testimonial">Testimonial</a></li>
+									<li><a href="#" title="gallery">Gallery</a></li>
+									<li><a href="#" title="contact us">Contact Us</a></li>
+								</ul>
+							</div>
+						</td>
+						<td width="30px" height="45px"><img src="images/menu-right.png" alt="" /></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	<!-- MAIN-BOX -->
+		<div class="main-box">
+			<div class="main-box-top"></div>
+		<!-- CONTENT -->
+			<div class="content">
+			<div class="content-bg">
+				<div class="top-content"></div>
+				<div class="left-content">
+			<!-- SIDEBAR-LEFT -->
+					<div class="sidebar-left">
+					<!-- MAIN-MENU -->
+						<div class="main-menu">
+							<div class="main-menu-top"></div>
+							<ul>
+								<li><a id="menu-first"href="#" title="Marketing Plan">Marketing Plan</a></li>
+								<li><a href="#" title="Testimonials">Testimonials</a></li>
+								<li><a href="#" title="Stok Card Center">Stok Card Center</a></li>
+								<li><a id="menu-last" href="#" id="menu-last"  title="URL Reference">URL Reference</a></li>
+							</ul>
+						</div>
+					<!-- MEMBER LOGIN -->
+						<div class="sidebar-item">
+							<div class="sidebar-top">Member Login</div>
+							<table id="member-login" cellpadding="0" cellspacing="5px" border="0">
+								<tr><td colspan="2">Member ID</td></tr>
+								<tr><td colspan="2"><input type="text" class="login-field" name="username" value="" /></td></tr>
+								<tr><td colspan="2">Password</td></tr>
+								<tr><td colspan="2"><input type="password" class="login-field" name="password" value="" /></td></tr>
+								<tr>
+									<td><img src="images/captcha-bg.png" alt="captcha" title="tulis kode unik disini" /></td>
+									<td><input type="text" class="captcha-field" name="captcha" value="kode unik" /></td>
+								</tr>
+								<tr><td colspan="2" align="center"><input type="submit" class="login-btn" name="login"  value=""/></td></tr>
+							</table>
+							<div class="sidebar-bottom"></div>
+						</div>
+					<!-- NEWS & PROMO -->
+						<div class="sidebar-item">
+							<div class="sidebar-top">News &amp; Promo</div>
+								<p><strong>[random promo]</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... <a href="#">more</a></p>
+								<p><strong>[random promo 2]</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit... <a href="#">more</a></p>
+							<div class="sidebar-bottom"></div>
+						</div>
+					<!-- NEW MEMBER -->
+						<div class="sidebar-item">
+							<div class="sidebar-top">New Member</div>
+							<ul>
+								<li id="menu-first"><strong>[nama member]</strong><br />[lokasi member]</li>
+								<li><strong>[nama member]</strong><br />[lokasi member]</li>
+								<li><strong>[nama member]</strong><br />[lokasi member]</li>
+								<li><strong>[nama member]</strong><br />[lokasi member]</li>
+								<li id="menu-last"><strong>[nama member]</strong><br />[lokasi member]</li>
+							</ul>
+							<div class="sidebar-bottom"></div>
+						</div>
+					<!-- EMPTY-BOX -->
+						<div class="sidebar-item">
+							<div class="sidebar-top">Empty Box</div>
+							<p>Kotak Kosong, <br />dapat diisi apasaja</p>
+							<div align="center"><img width="70px" src="images/sign-st666.png" alt="" title="by me" /></div>
+							<div class="sidebar-bottom"></div>
+						</div>
+					</div>
+				</div>
+				<div class="right-content">
+			<!-- MAIN-CONTENT -->
+					<div class="main-content">
+					<!-- TESTIMONIAL -->
+						<div class="testimonial-top">Testimonial</div>
+						<div class="testimonial">
+							<div class="testimonial-row">
+								<h2><em>Mon, 11 Jan 2010 @08:56; 7207 hits</em></h2>
+								<h3><strong>Nama</strong></h3>
+								<div class="img">
+									<a href="#" title="testimonial title"><img height="85px" src="images/nopic-image.jpg" alt="image" /></a>
+								</div>
+								<h1><strong><a style="color: #39f;" href="#" title="testimonial Title">untung puluhan juta dari webforinstant</a></strong></h1>
+								<p>SALAM SUKSES !</p>
+								<p style="text-align: justify;">Saya seorang pedagang bakso dari mulai saya... <a href="#" title="Read More">more...</a></p>
+							</div>
+							<div class="testimonial-row">
+								<h2><em>Mon, 10 Jan 2010 @08:56; 7207 hits</em></h2>
+								<h3><strong>Nama 2</strong></h3>
+								<div class="img">
+									<a href="#" title="testimonial title"><img height="85px" class="image" src="images/nopic-image.jpg" alt="image" /></a>
+								</div>
+								<h1><strong><a style="color: #39f;" href="#" title="testimonial Title">Salam Dahsyat DARI ASEP JA PEDAGANG AYAM GORENG DARI TASIKMLAYA</a></strong></h1>
+								<p>SALAM SUKSES !</p>
+								<p style="text-align: justify;">Salam Dahsyat DARI ASEP JA PEDAGANG AYAM GORENG DARI TASIKMLAYA kesuksesan... <a href="#" title="Read More">more...</a></p>
+							</div>
+							<div class="clear"></div>
+							<div class="testimonial-bottom"></div>
+						</div>
+					</div>
+			<!-- SIDEBAR-RIGHT -->
+					<div class="sidebar-right">
+					<!-- CONTACT -->
+						<div class="contact">
+							<div class="contact-top"></div>
+							<div class="contact-info">
+								<h1>PT. SEJAHTERA BERSAMA</h1>
+								<p>[alamat]<br />[kota]<br />[telpon]<br />[email]</p>
+							</div>
+							<div class="contact-bottom"></div>
+						</div>
+					<!-- SUPPORT -->
+						<div class="support">
+							<div class="support-top">Support</div>
+							<div class="support-info">
+								<table cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td>CS1</td>
+										<td align="right"><a href="ymsgr:sendIM?heriyantoagus"> <img src="http://opi.yahoo.com/online?u=heriyantoagus&amp;m=g&amp;t=1&amp;rand=1200209294" alt="" border="0" ></a></td>
+									</tr>
+									<tr>
+										<td>CS2</td>
+										<td align="right"><a href="ymsgr:sendIM?heriyantoagus"> <img src="http://opi.yahoo.com/online?u=heriyantoagus&amp;m=g&amp;t=1&amp;rand=1200209294" alt="" border="0" ></a></td>
+									</tr>
+									<tr>
+										<td>CS3</td>
+										<td align="right"><a href="ymsgr:sendIM?heriyantoagus"> <img src="http://opi.yahoo.com/online?u=heriyantoagus&amp;m=g&amp;t=1&amp;rand=1200209294" alt="" border="0" ></a></td>
+									</tr>
+									<tr><td colspan="2"><strong>Call Center</strong><br />000-000000</td></tr>
+								</table>
+							</div>
+							<div class="support-bottom"></div>
+						</div>
+					<!-- REKENING -->
+						<div class="sidebar-item">
+							<div class="sidebar-top">Rekening</div>
+						<!-- BCA -->
+							<div class="rek-item">
+								<img src="images/bank/bank-bca.png" alt="bca" />
+								<ul>
+									<li>[nomor rekening]</li>
+									<li>a.n.</li>
+									<li>[nama pemilik]</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						<!-- MANDIRI -->
+							<div class="rek-item">
+								<img src="images/bank/bank-mandiri.png" alt="bca" />
+								<ul>
+									<li>[nomor rekening]</li>
+									<li>a.n.</li>
+									<li>[nama pemilik]</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						<!-- BNI -->
+							<div class="rek-item">
+								<img src="images/bank/bank-bni.png" alt="bca" />
+								<ul>
+									<li>[nomor rekening]</li>
+									<li>a.n.</li>
+									<li>[nama pemilik]</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						<!-- EMPTY -->
+							<div class="rek-item">
+								<img src="images/bank/bank-kosong.png" alt="bca" />
+								<ul>
+									<li>logo bank lain ada di <a href="images/bank">"images/bank"</a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="sidebar-bottom"></div>
+						</div>
+					<!-- CEK-KARTU -->
+						<div class="sidebar-item">
+							<div class="sidebar-top">Cek Kartu</div>
+							<table id="member-login" cellpadding="0" cellspacing="5px" border="0">
+								<tr><td>Nomor Kartu</td></tr>
+								<tr><td><input type="text" class="login-field" name="nomor-kartu" value="" /></td></tr>
+								<tr><td align="center"><input type="submit" class="cek-btn" name="login"  value=""/></td></tr>
+							</table>
+							<div class="sidebar-bottom"></div>
+						</div>
+					<!-- EMPTY-BOX -->
+						<div class="sidebar-item">
+							<div class="sidebar-top">Empty Box</div>
+							<p>Kotak Kosong, <br />dapat diisi apasaja</p>
+							<div align="center"><img src="images/sign-st666.png" alt="" title="by me" /></div>
+							<div class="sidebar-bottom"></div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="bottom-content"></div>
+			</div> <!-- end of content-bg" -->
+			</div> <!-- end of content -->
+		</div>
+	<!-- FOOTER -->
+		<div class="footer">
+			<div class="footer-column">
+				<div class="fc-left">
+			<!-- TESTIMONIAL -->
+					<div class="testi-front">
+						<div class="tf-top"><a href="#">Testimonial</a></div>
+						<div class="tf-row-top"></div>
+						<div class="tf-row">
+							<div class="img">
+								<a href="#" title="testimonial title"><img height="85px" class="image" src="images/nopic-image.jpg" alt="image" /></a>
+							</div>
+							<h2><em>Thu, 11 Nov 2010 @08:56; 7207 hits</em></h2>
+							<strong>[NAME]</strong>
+							<p>SALAM SUKSES !</p>
+							<p style="text-align: justify;">[isi Testimoni] <a href="#" title="Read More">more...</a></p>
+							<div class="clear"></div>
+						</div>	
+						<div class="tf-row-bottom"></div>
+					</div>
+			<!-- TOP-MEMBER -->
+					<div class="top-member">
+						<div class="stat-member-top">Top Member</div>
+						<ul>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+						</ul>
+					</div>
+				</div>
+				<div class="fc-right">
+			<!-- TOP-SPONSOR -->
+					<div class="top-sponsor">
+						<div class="stat-member-top">Top Sponsor</div>
+						<ul>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+							<li>[nama]</li>
+						</ul>
+					</div>
+			<!-- STATISTIK -->
+					<div class="statistik">
+						<div class="statistik-top">Statistik</div>
+						<div class="statistik-info">
+							<table cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td>&raquo; Total Member</td>
+									<td align="right">6666</td>
+								</tr>
+								<tr>
+									<td>&raquo; Member Hari ini</td>
+									<td align="right">666</td>
+								</tr>
+								<tr>
+									<td>&raquo; Member Bulan Ini</td>
+									<td align="right">6666</td>
+								</tr>
+							</table>
+						</div>
+						<div class="statistik-bottom"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="credit">
+				<ul>
+					<li><a href="#" id="current" title="home">home</a></li>
+					<li><a href="#" title="company profile">company profile</a></li>
+					<li><a href="#" title="marketing plan">marketing plan</a></li>
+					<li><a href="#" title="register">register</a></li>		
+					<li><a href="#" title="faq">faq</a></li>
+					<li><a href="#" title="term of services">term of services</a></li>
+					<li><a href="#" id="menu-last" title="contact us">contact</a></li>
+				</ul>
+				<p><br>Copyright © 2010. <a href="http://esoftdream.net/">EsoftDream.net</a>. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

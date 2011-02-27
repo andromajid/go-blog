@@ -1,0 +1,156 @@
+@CHARSET "ISO-8859-1";
+/*
+ * =========================================================================
+ * CSS STANDARD LAYOUT STYLE SARANG SEMUT
+ * Copyrighted (c) 2010 EsoftDream.net
+ * =========================================================================
+ */
+
+/* CSS Reset */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, li, fieldset, form, label { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+ol, ul { list-style: none; }
+
+:focus { outline: 0; }
+/* Reset End */
+
+body, p, h1, h2, h3, h4, h5, h6, div, ol, li, table, td, th, a, form, input, select, textarea, option, label {
+	line-height:150%;
+}
+body div {
+	font-family:Verdana, Helvetica;
+	color: #000;
+	font-size:11px !important;
+}
+h1 {
+	color: #2c5b13 !important;
+	font-size: 15px !important;
+	border-bottom: 2px dotted #2c5b13 ;
+}
+
+/* standard cell */
+td, th {
+/*	vertical-align: top; */
+	line-height: 120%;
+}
+td.text, td.form {
+	padding: 4px;
+}
+
+.center{
+	text-align: center;
+}
+.left{
+	text-align:left;
+}
+.right{
+	text-align: right;
+}
+.justify{
+	text-align:justify;
+}
+.clear{
+	clear: both;
+}
+
+/* standard Hyperlink */
+a { text-decoration:none; color:#1a5396; }
+a:hover { text-decoration:underline; color:#0b2d55; }
+
+/* menu first and last */
+#menu-first {
+	border-left:none !important;
+	border-top:none !important;
+}
+#menu-last {
+	border-right:none !important;
+	border-bottom:none !important;
+}
+
+/* standard no padding-margin*/
+ul, p {
+	margin:0 ;
+	padding:0 ;
+}
+
+/*-----------------------------------TABLE----------------------------------------------------- */
+/* 
+===================================================
+		TABLE COMMON
+===================================================
+*/
+.table-common {
+	clear:both;
+	border-collapse:collapse;
+	border:1px solid #558301;
+	border-top:none;
+}
+
+.table-common tr.even {
+	background-color:#fcfcfc;
+}
+
+.table-common tr {
+	background-color:#e1fd9c;
+	border-top:1px solid #558301;
+}
+
+.table-common th {
+	padding:8px;
+	color:#fff;
+	background-color:#74b204;
+	margin:0 0 .75em 0;
+	text-transform:uppercase;
+	letter-spacing:.1em;
+	font:normal normal 95% 'trebuchet ms', trebuchet, arial, verdana, sans-serif;
+	line-height:1.4em;
+}
+
+.table-common td {
+	padding:4px 6px 10px 6px;
+}
+
+
+/* 
+===================================================
+		TABLE LIST
+===================================================
+*/
+.table-list {
+	clear:both;
+	border-collapse:collapse;
+	border:1px solid #558301;
+	border-top:none;
+}
+
+.table-list tr.even {
+	background-color:#fcfcfc;
+}
+
+.table-list tr {
+	background-color:#e1fd9c;
+	border-top:1px solid #558301;
+}
+
+.table-list th {
+	padding:8px;
+	color:#fff;
+	background-color:#74b204;
+	margin:0 0 .75em 0;
+	text-transform:uppercase;
+	letter-spacing:.1em;
+	font:normal normal 95% 'trebuchet ms', trebuchet, arial, verdana, sans-serif;
+	line-height:1.4em;
+	border-right:1px solid #0094d2;
+}
+
+.table-list td {
+	padding:4px 6px 10px 6px;
+	border-right:1px solid #558301;
+}
+
+.table-list td:last-child,
+.table-list th:last-child {
+	border-right:none;
+}

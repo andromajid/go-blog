@@ -16,7 +16,9 @@
 */
 $config['base_url'] = "http://".$_SERVER['HTTP_HOST'];
 $config['base_url'] .= preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME'])).'/';
-
+$config['themes'] = "mainweb";
+$config['themes_url'] = $config['base_url']."web/themes/".$config['themes'];
+$config['project'] = "MLM BASIC";
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -27,7 +29,7 @@ $config['base_url'] .= preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME']))
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

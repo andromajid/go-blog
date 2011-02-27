@@ -1,0 +1,313 @@
+.body{
+	width: 990px;
+	margin: auto;
+	text-align: left;
+}
+
+.top{
+	background: url(../images/top.jpg) no-repeat;
+	height: 16px;
+	font-size: 1px;
+}
+.wrap{
+	background: url(../images/mainbg.jpg) repeat-y;
+	padding: 0 13px 0 12px;
+}
+.mainbtm{
+	background: url(../images/mainbtm.jpg) no-repeat;
+	height: 14px;
+	font-size: 1px;
+}
+.header{
+	height: 118px;
+	width: 965px;
+	overflow: hidden;
+}
+.logo{
+	height: 118px;
+	width: 549px;
+	float: left;
+}
+.hmiddle{
+	background: url(../images/hmiddle.jpg) no-repeat;
+	height: 118px;
+	width: 285px;
+	float: left;
+}
+.hright{
+	width: 131px;
+	float: left;
+}
+.hrighttop{
+	background: url(../images/hrighttop.jpg) no-repeat;
+	height: 13px;
+	font-size: 1px;
+}
+.hrightbtm{
+	background: url(../images/hrightbtm.jpg) no-repeat;
+	height: 36px;
+	font-size: 1px;
+}
+.spacer{
+	height: 8px;
+	font-size: 1px;
+}
+
+.sdbar{
+	width: 251px;
+	float: left;
+	background: url(../images/logo_client.jpg) no-repeat bottom center;
+	padding-bottom: 120px;
+	margin-bottom: 20px;
+}
+.sdbar-item{
+	background: url(../images/sdbar_bg.jpg) repeat-y;
+	margin-bottom: 8px;
+}
+.sdbar-item h3{
+	background: url(../images/sdbar_top.jpg) no-repeat;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+.sdbar-item .content{
+	padding: 10px 10px 5px 10px;
+	font-size: 11px;
+}
+.sdbar-item .btm{
+	background: url(../images/sdbar_btm.jpg) no-repeat;
+	height: 6px;
+	font-size: 1px;
+}
+.sdbar-item table{
+	width: 100%;
+}
+.sdbar-item td{
+	font-size: 11px;
+	border-bottom: 1px solid #ccc;
+	padding: 6px 4px;
+}
+.sdbar-item td.tdtitle{
+	font-weight: bold;
+}
+.sdbar-item td.tddata{
+	text-align: right;
+}
+
+.main{
+	width: 706px;
+	float: right;
+}
+.mainmenu{
+	
+}
+.mainmenu-item{
+	background: url(../images/menubg.jpg) repeat-y;
+	margin-bottom: 2px;
+}
+.mainmenu-item h3{
+	background: url(../images/menutop.jpg) no-repeat;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+.mainmenu-item h3 a, .mainmenu-item h3 a:hover{
+	color: #fff;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+.mainmenu-item .content{
+	padding: 10px 10px 5px 10px;
+	font-size: 11px;
+}
+.mainmenu-item .btm{
+	background: url(../images/menubtm.jpg) no-repeat;
+	height: 6px;
+	font-size: 1px;
+	margin-bottom: 6px;
+}
+.submenu{
+	width: 90px;
+	height: 95px;
+	float: left;
+	text-align: center;
+	background: url(../images/dll.jpg) no-repeat top center;
+}
+.submenu a{
+	display: block;
+	padding: 60px 0 0 0;
+	margin: 0 5px;
+	color: #333;
+}
+.submenu a:hover{
+	color: #f80;
+}
+#tandaterima{
+	background: url(../images/tandaterima.jpg) no-repeat top center !important;
+}
+#profile{
+	background: url(../images/profile.jpg) no-repeat top center !important;
+}
+#ubahpassword{
+	background: url(../images/ubahpassword.jpg) no-repeat top center !important;
+}
+#testimonial{
+	background: url(../images/testimonial.jpg) no-repeat top center !important;
+}
+#downloadfilepresentasi{
+	background: url(../images/downloadpresentasi.jpg) no-repeat top center !important;
+}
+#keagenan{
+	background: url(../images/keagenan.jpg) no-repeat top center !important;
+}
+#asuransi{
+	background: url(../images/asuransi.jpg) no-repeat top center !important;
+}
+#statusjaringan{
+	background: url(../images/statusjaringan.jpg) no-repeat top center !important;
+}
+#perkembanganjaringan{
+	background: url(../images/perkembanganjaringan.jpg) no-repeat top center !important;
+}
+#geneologyjaringan{
+	background: url(../images/geneologyjaringan.jpg) no-repeat top center !important;
+}
+#sponsorisasi{
+	background: url(../images/sponsorisasi.jpg) no-repeat top center !important;
+}
+#geneologysponsor{
+	background: url(../images/geneologysponsor.jpg) no-repeat top center !important;
+}
+#statuskomisi{
+	background: url(../images/statuskomisi.jpg) no-repeat top center !important;
+}
+#statemenkomisi{
+	background: url(../images/statemenkomisi.jpg) no-repeat top center !important;
+}
+#reportkomisiharian{
+	background: url(../images/reportkomisiharian.jpg) no-repeat top center !important;
+}
+#depositpulsa{
+	background: url(../images/depositpulsa.jpg) no-repeat top center !important;
+}
+#belipulsa{
+	background: url(../images/isipulsa.jpg) no-repeat top center !important;
+}
+#daftaragen{
+	background: url(../images/daftaragen.jpg) no-repeat top center !important;
+}
+#logtransaksipulsa{
+	background: url(../images/logtransaksipulsa.jpg) no-repeat top center !important;
+}
+#transaksigagal{
+	background: url(../images/transaksigagal.jpg) no-repeat top center !important;
+}
+#pln{
+	background: url(../images/pln.jpg) no-repeat top center !important;
+}
+#telkom{
+	background: url(../images/telkom.jpg) no-repeat top center !important;
+}
+#kartukredit{
+	background: url(../images/kartukredit.jpg) no-repeat top center !important;
+}
+#asuransi2{
+	background: url(../images/asuransi2.jpg) no-repeat top center !important;
+}
+#saldo{
+	background: url(../images/saldo.jpg) no-repeat top center !important;
+}
+#mutasi{
+	background: url(../images/mutasi.jpg) no-repeat top center !important;
+}
+#transfer{
+	background: url(../images/transfer.jpg) no-repeat top center !important;
+}
+
+.main-content{
+	padding: 0 10px 10px 10px;
+}
+
+.main-content h1{
+	font-size: 24px;
+	font-weight: normal;
+	font-family: Georgia;
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+	border-bottom: 1px dotted #aaa;
+}
+
+.main-content h2{
+	font-size: 20px;
+	font-weight: normal;
+	font-family: Georgia;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+.main-content h3{
+	font-size: 18px;
+	font-weight: normal;
+	font-family: Georgia;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+.main-content li{
+	padding-bottom: 10px;
+	line-height: 150%;
+}
+
+.main-content p{
+	margin: 0.5em 0 1em 0;
+}
+
+.footer{
+	color: #fff;
+	padding: 0 10px 10px 10px;
+	text-align: right;
+}
+
+.sidebarmenu{
+	
+}
+.sidebarmenu-item{
+	background: url(../images/sdbar_bg.jpg) repeat-y;
+	margin-bottom: 2px;
+}
+.sidebarmenu-item h3{
+	background: url(../images/sdbar_top.jpg) no-repeat;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+.sidebarmenu-item h3 a, .sidebarmenu-item h3 a:hover{
+	color: #fff;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+.sidebarmenu-item .content{
+	padding: 10px 10px 5px 10px;
+	font-size: 11px;
+}
+.sidebarmenu-item .btm{
+	background: url(../images/sdbar_btm.jpg) no-repeat;
+	height: 6px;
+	font-size: 1px;
+	margin-bottom: 6px;
+}

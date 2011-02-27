@@ -1,0 +1,146 @@
+* {font-family: Arial, Helvetica, sans-serif;}
+body {font-size: 12px;color: #333;margin: 0px;text-align: center; background:  #2780E6;}
+td, th{padding: 4px 6px; font-size:12px; vertical-align: top;}
+table{border-collapse:collapse;}
+p{margin: 4px 0px; text-align:left; line-height: 150%;}
+small{font-size:11px;}
+
+a {text-decoration: none;color: #d2630a; outline:none}
+a:hover {text-decoration: none;color: #f80;}
+a img{border: none;}
+
+form {margin: 0px;padding: 0px;}
+input,select,textarea,option,label {font-size: 12px;}
+input.txt {background: #ffc;border: 1px solid #666; padding:2px 4px;}
+input.btn{background: #f80;border: 1px solid #666; padding:2px 4px; color: #fff;}
+select{ border: 1px solid #666;}
+textarea {background: #ffc;border: 1px solid #666; padding:2px 4px;}
+
+.c{text-align: center !important;}
+.l{text-align:left !important;}
+.r{text-align: right !important;}
+.j{text-align:justify !important;}
+.clear{clear: both;}
+
+.std{
+	width: 100%;
+	border-collapse: collapse;
+}
+.std td{
+	border: 1px solid #ccc;
+}
+.std th{
+	background: #ddd;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.form .label{
+	width: 80px;
+}
+.form table{
+	margin-bottom: 10px;
+}
+.form .form-note{
+	padding: 5px 10px;
+	background: #efefef;
+	font-size: 11px;
+}
+
+.pagination{padding: 10px 0;font-size: 11px; text-align: right;}
+.pagination a {padding: 4px 5px; color: #333; margin: 0 1px; background:#efefef; border:1px solid #ddd;}
+.pagination a:hover {background:#666; color: #fff; border:1px solid #333;}
+.pagination strong {padding: 5px 5px; margin: 0 1px;}
+.pagination-info{font-size:11px; padding: 6px 0 0 0;}
+/*
+    Document   : table.css
+    Created on : Jun 23, 2010, 12:41:09 AM
+    Author     : Agus Heriyanto
+*/
+table {
+  border-collapse:collapse;
+}
+
+.list table {
+  width: 100%;
+	border-collapse: collapse;
+}
+
+.list tr.title th, .list tr.title td, .title {
+  background-color:#ddd !important;
+}
+
+.list tr:hover td {
+	background-color: #dfddfd !important;
+}
+
+.list th {
+  padding:4px 8px;
+  font-family:verdana;
+  font-size:8pt;
+  border: 1px solid #ccc;
+  background:#ddd;
+  color:#555;
+  font-weight:bold;
+  text-align:center;
+}
+
+.list td {
+  padding:4px 8px;
+  border: 1px solid #ccc;
+  background:#eee;
+  color:#555;
+  font-family:verdana;
+  font-size:8pt;
+}
+
+.list td.no-border {
+  border-left:0 !important;
+}
+
+.add table {
+  width: 100%;
+	border-collapse: collapse;
+  border:1px solid #ccc;
+}
+
+.add tr.title th, .add tr.title td, .title {
+  background-color:#ddd !important;
+}
+
+.add th {
+  padding:4px 8px;
+  font-family:verdana;
+  font-size:8pt;
+  border: 1px solid #ccc;
+  background:#eee;
+  color:#555;
+  font-weight:normal;
+  text-align:right;
+}
+
+.add td {
+  padding:4px 8px;
+  border: 1px solid #ccc;
+  background:#eee;
+  color:#444;
+  font-family:verdana;
+  font-size:8pt;
+}
+
+.add td.no-border, .no-border {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+.add-no-border table {
+  width: 100%;
+	border-collapse: collapse;
+  border:0px;
+}
+
+.add-no-border td {
+  border-left: 0 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+}

@@ -38,8 +38,12 @@
 |
 */
 
-$route['default_controller'] = "welcome";
-$route['404_override'] = '';
+$route['default_controller'] = "page/view/1";//yang diload pertama
+$route['admin'] = "system/admin";//admin halaman pertama
+$route['admin/([a-zA-Z_-]+)/(:any)'] = "$1/admin/$2";
+$route['admin/([a-zA-Z_-]+)'] = "$1/admin/index";
+
+$route['404_override'] = 'welcome';
 
 
 /* End of file routes.php */

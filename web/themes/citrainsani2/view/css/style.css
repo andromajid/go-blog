@@ -1,0 +1,445 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body { 
+	background-color:#DEE1ED;
+	margin: 0px;
+}
+
+/* navbar start here */
+
+.navbar {
+	margin-left:auto;
+	margin-right:auto;
+	height:54px;
+	background-repeat:repeat-x;
+	background-image: url(../images/navbar.jpg);
+	width:auto;
+}
+
+/* menu start here */
+
+.wrap-mainmenu {
+	margin-right:auto;
+	margin-left:auto;
+	width:990px;
+	height:54px;
+}
+.mainmenu{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	color: #000;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 1px;
+}
+.mainmenu ul {
+	display: block;
+	padding: 0px;
+	list-style-type: none;
+	margin-left: 45px;
+	margin-top:10px;
+}
+
+.mainmenu ul li {
+	float: left;
+	display: block;
+	width: auto;
+	text-align: center;
+	padding-right:15px;
+	margin-left:10px;
+}
+.mainmenu li a span {
+	display:block;
+	text-align:center;
+	cursor:pointer;
+	padding-top: 0px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+}
+.mainmenu li a {
+	list-style-type: none;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+}
+
+.mainmenu li a:hover{
+	background-image: url(../images/menu-hover.jpg);
+	background-repeat: repeat-x;
+	height: 24px;
+	width:auto;
+	display: block;
+	color: #000;
+}
+.mainmenu li a:active
+{
+	background-image: url(../images/menu-hover.jpg);
+	background-repeat: repeat-x;
+	height: 24px;
+	width:auto;
+	color: #000;
+}
+ul.current a:visited
+{
+	background-image: url(../images/menu-hover.jpg);
+	background-repeat: repeat-x;
+	height: 24px;
+	width:auto;
+	display: block;
+	color: #000;
+}
+ul.current a:active
+{
+	background-image: url(../images/menu-hover.jpg);
+	background-repeat: repeat-x;
+	height: 24px;
+	width:auto;
+	display: block;
+	color: #000;
+}
+/* header start here */
+
+.header {
+	background-image: url(../images/header.jpg);
+	background-repeat: repeat-x;
+	height: 283px;
+
+}
+#glare {
+	background-image:
+	url(../images/glare.png);
+	width:1196px;
+	height:246px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-7px;
+}
+#wrap-logo {
+	width:990px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-240px;
+}
+
+
+#logo {
+	background-image:url(../images/logo.png);
+	background-repeat:no-repeat;
+	float:left;
+	width:387px;
+	height:135px;
+}
+#banner {
+	background-image:url(../images/banner.jpg);
+	background-repeat:no-repeat;
+	width:500px;
+	height:101px;
+	float:right;
+	margin-top:20px;
+}
+#slideshow {
+	background-color: #FF0;
+	height: 258px;
+	width: 990px;	
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-140px;
+	-moz-box-shadow:0px  4px  8px  #191919;
+	-webkit-box-shadow:0px 4px 8px #191919;
+}
+
+/* main content start here */
+
+.wrapper {
+	margin-left:auto;
+	margin-right:auto;
+	width: 990px;
+}
+.wrap-bg-maincontent {
+	width:990px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:5px;
+	background-image: url(../images/middle.jpg);
+	background-repeat: repeat-y;
+
+}
+.bg-maincontent {
+	width:990px;
+	margin-left:-197px;
+	background-color: #000;
+	Padding-left:197px;
+
+}
+/*sidebar start here */
+
+.wrap-leftsidebar {
+	width:178px;
+	height:auto;
+	float:left;
+}
+.wrap-rightsidebar {
+	width:178px;
+	height:auto;
+	float:right;
+
+}
+.sidebar {
+	width:178px;
+	height:31px;
+	background-image:url(../images/top-sidebar.jpg);
+	background-repeat:repeat-x;
+	background-color: #FFF;
+	margin-top: -12px;
+}
+.sidebar h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 6px;
+}
+
+.content{
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-top:-5px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+.content ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+.content li{
+	line-height: 22px;
+	padding: 0 3px;
+	line-height: 30px;
+	color: #333;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #666;
+}
+.content-icon ul li
+{
+	line-height: 22px;
+	background-image: url(../images/arrow4b_blu.gif);
+	background-repeat: no-repeat;
+	padding-top: 5px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 14px;
+	background-position: left center;
+}
+.content a{
+	color: #06C;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+}
+.content a:hover{
+	color: #f80;
+}
+.content-login {
+}
+#marqueecontainer{
+	position: relative;
+	width: 170px;
+	height: 230px;
+	overflow: hidden;
+}
+#vmarquee{
+	position: absolute;
+	width: 170px;
+	line-height: 20px;
+}
+.testimonial {
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-top:-5px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	text-align: justify;
+}
+/*main content*/
+.wrap-maincontent {
+	float: left;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	padding-left: 7px;
+	width:619px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.left-mainhead {
+	background-image: url(../images/top-content.jpg);
+	height: 31px;
+	width: 63px;
+	float: left;
+
+}
+.right-mainhead {
+	background-image: url(../images/top-content-right.jpg);
+	background-repeat: repeat-x;
+	float: right;
+	width: 556px;
+	height:31px;
+}
+.right-mainhead h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: #FFF;
+}
+
+.maincontent {
+	background-color: #FFF;
+	margin-right: auto;
+	margin-left: auto;
+}
+.content-maincontent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	width: 580px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top:15px;
+	text-align: justify;
+	text-decoration: none;
+}
+.clearer {
+	clear:both;
+}
+.background-footer {
+	background-image:
+	url(../images/bg-footer.jpg);
+	width:auto;
+	height:73px;
+	background-repeat:repeat-x;
+	margin-top:48px;
+	
+}
+.wrapper-footer {
+
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:	-120px;
+	
+}
+.footer {
+	background-image:url(../images/footer.jpg);
+	background-repeat:repeat-x;
+	height:121px;
+	background-position: bottom;
+	width: 990px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -100px;
+}
+.content-footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	padding-top: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;	
+}
+
+/* Slideshow*/
+
+/*--Main Container--*/
+.main_view {
+	float: left;
+	position: relative;
+}
+/*--Window/Masking Styles--*/
+.window {
+	height:286px;	width: 990px;
+	overflow: hidden; /*--Hides anything outside of the set width/height--*/
+	position: relative;
+}
+.image_reel {
+	position: absolute;
+	top: 0; left: 0;
+}
+.image_reel img {
+	float: left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+/*--Paging Styles--*/
+.paging {
+	position: absolute;
+	bottom: 40px; right: -4px; top:3px;
+	width: 178px; height:47px;
+	z-index: 100; /*--Assures the paging stays on the top layer--*/
+	text-align: center;
+	line-height: 40px;
+	background: url(../images/cumi.png) no-repeat;
+	display: none; /*--Hidden by default, will be later shown with jQuery--*/
+}
+.paging a {
+	padding: 5px;
+	text-decoration: none;
+	color: #666;
+}
+.paging a.active {
+	font-weight: bold;
+	background: #920000;
+	border: 1px solid #610000;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #FFF;
+}
+.paging a:hover {font-weight: bold;}
+.titleInfo {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#EFEFEF none repeat scroll 0 0;
+border:1px solid #CCCCCC;
+line-height:24px;
+padding:0 5px;
+}
+.msgInfo {
+border:1px solid #CCCCCC;
+margin-bottom:10px;
+padding:5px;
+}
+.wrap-maincontent td {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#FFFFFF none repeat scroll 0 0;
+border:1px solid #CCCCCC;
+}
+.wrap-maincontent th {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#DDDDDD none repeat scroll 0 0;
+border:1px solid #CCCCCC;
+text-align:center;
+}
+.even td{
+	background: #efefef;
+        width: 160px;
+}

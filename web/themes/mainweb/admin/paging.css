@@ -1,0 +1,46 @@
+/* 
+  Document   : paging.css
+  Created on : Jun 17, 2010, 11:49:26 AM
+  Author     : Agus Heriyanto
+*/
+
+.paging-top, .paging-bottom {
+	padding:8px 3px;
+	margin:5px 0;
+	text-align:right;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.paging-top {
+	/*border-bottom:1px solid #bbb;*/
+}
+
+.paging-bottom {
+	/*border-top:1px solid #bbb;*/
+}
+
+.paging-top span, .paging-bottom span {
+	padding:2px 6px;
+	margin:0 1px;
+	font-weight:bold;
+  color:#2e2e2e;
+  border:1px solid #999;
+	background-color: #bbb;
+  -moz-border-radius:2px;
+}
+
+.paging-top a, .paging-bottom a {
+	padding:2px 6px;
+	margin:0 1px;
+	border: 1px solid #999;
+	color: #2e2e2e;
+	background-color: #eee;
+  -moz-border-radius:2px;
+}
+
+.paging-top a:hover, .paging-bottom a:hover {
+	color:#2e2e2e;
+  border:1px solid #555;
+	background-color: #bbb;
+}

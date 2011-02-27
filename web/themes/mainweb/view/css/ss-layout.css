@@ -1,0 +1,326 @@
+@CHARSET "ISO-8859-1";
+/*
+ * =========================================================================
+ * CSS MAIN LAYOUT STYLE SARANG SEMUT
+ * Copyrighted (c) 2010 EsoftDream.net
+ * =========================================================================
+ */
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../images/bg-main.png) repeat-x #2c5e10; display: block;
+}
+
+.container {
+	margin: auto;
+	width: 980px; 
+}
+
+/* =============================================================================
+ * 						HEADER
+ * =============================================================================
+ */
+.header {
+	width: 980px;
+}
+/* ==============================================================================
+ * LOGO----------------------------------------------------------------------LOGO */
+.header .logo {
+	width: 980px; height: 170px;	
+}
+.header .logo-left {
+	float: left;
+	width: 400px; height: 170px;
+	background: url(../images/logo-left.png) no-repeat transparent; display: block;
+}
+.header .logo-right {
+	float: right;
+	width: 580px; height: 170px;
+}
+.header .logo-right img {
+	float: right;
+}
+.header .logo-ss {
+	width: 580px; height: 90px;
+}
+.header .logo-animasi {
+	width: 580px; height: 80px;
+	background: url(../images/logo-animasi-bg.png) no-repeat transparent; display: block;
+}
+
+/* ==============================================================================
+ * MENU----------------------------------------------------------------------MENU */
+.header .menu, .header .menu table {
+	width: 980px; height: 45px;
+	display: block;
+}
+.header .menu .link {
+	width: 715px; height: 45px;
+	background: url(../images/menu-bg.png) repeat-x #84cb03; display: block;
+}
+.header .menu table img {
+	margin-top: -1px !important;
+	padding-top: 0 !important;
+}
+.header .menu ul { list-style-type: none; }
+.header .menu li { display: inline; }
+.header .menu li a {
+	float: left;
+	height: 27px; /*height: 45px*/
+	padding: 18px 15px 0 15px;
+		color: #49652b !important;
+		font-size: 10px !important;
+		text-decoration: none !important;
+}
+.header .menu li a:hover, .header .menu li a#current{
+	background: url(../images/menu-bg-hover.png) repeat-x #f7ffce; 
+		color: #6b5706 !important;
+}
+
+/* =============================================================================
+ * 						MAIN-BOX
+ * =============================================================================
+ */
+.main-box {
+	width: 980px;
+}
+.main-box-top {
+	width: 980px; height: 30px;
+	background: url(../images/main-box-top.png) no-repeat #f7ffce; display: block;
+}
+/* ==============================================================================
+ * CONTENT----------------------------------------------------------------CONTENT */
+.content {
+	width: 950px;
+	margin: 0 15px;
+	background: url(../images/content-bg.png) repeat-x #3a7718; display: block;
+}
+.content-bg {
+	background: url(../images/content-bg-mid.png) center repeat-y transparent; display: block;
+}
+.top-content {
+	width: 950px; height: 20px;
+	background: url(../images/content-top.png) no-repeat #26520e; display: block;
+}
+.bottom-content {
+	width: 950px; height: 20px;
+	background: url(../images/content-bottom.png) no-repeat #26520e; display: block;
+}
+.left-content {
+	float: left;
+	width: 190px;
+}
+.right-content {
+	float: right;
+	width: 760px;
+}
+/* SIDEBAR-LEFT-------------------------------------------------------SIDEBAR-LEFT */
+.sidebar-left {
+	float: left; 
+	width: 170px; /*width: 190px;*/
+	padding: 0  5px 0 15px;
+}
+
+/* MAIN-CONTENT-------------------------------------------------------MAIN-CONTENT */
+.main-content {
+	float: left;
+	width: 530px; /*width: 570px*/
+	padding: 0 20px 10px 20px;
+	background: url(../images/content-main-top.png) top center no-repeat transparent; display: block;
+}
+.main-content h1#title {
+	width: 530px;
+		color: #2c5b13 !important;
+		font-size: 16px !important;
+		font-family: Helvetica, Arial, Verdana !important;
+	border-bottom: 2px dotted #2c5b13 ;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+.main-content img {
+	padding: 5px;
+}
+.main-content #readmore {
+	width: 92px; height: 25px;
+	background: url(../images/readmore-btn.png) no-repeat transparent; display: block;
+}
+.main-content #readmore:hover {
+	width: 92px; height: 25px;
+	background: url(../images/readmore-hover.png) no-repeat transparent; display: block;
+}
+.main-content .article-bottom {
+	width: 530px; height: 10px;
+	margin-top: 10px;
+	background: url(../images/article-bottom.png) repeat-x #fff; display: block;
+}
+/* PAGING------------------------------------------------------------------PAGING */
+.content .paging-1-top span, .content .paging-1-bottom span, .content .paging-1-top a:hover, .content .paging-1-bottom a:hover {
+	width: 8px; height: 16px; /*width: 22px; height: 20px;*/
+	color:#fff !important;
+	font-weight:bold;
+	margin:0;
+	padding:4px 8px;
+	background: url(../images/paging-bg-on.png) no-repeat; 
+}
+.content .paging-1-top a, .content .paging-1-bottom a {
+	background: url(../images/paging-bg.png) no-repeat;
+	color:#558301 !important;
+	font-weight:bold;
+	margin:0;
+	padding:4px 8px;
+	text-decoration: none !important;
+}
+.content .paging-1-top, .content .paging-1-bottom {
+	text-align:right;
+	font-family: arial !important;
+	font-size: 10px !important;
+}
+
+
+/* SIDEBAR-RIGHT-----------------------------------------------------SIDEBAR-RIGHT */
+.sidebar-right {
+	float: right;
+	width: 170px; /*width: 190px;*/
+	padding: 0  15px 0 5px;
+}
+/* pengaturan lengkap sidebar ada di ss-sidebar.css */
+
+/* =============================================================================
+ * 						FOOTER
+ * =============================================================================
+ */
+.footer {
+	width: 950px;
+	margin: 0 15px;
+}
+/* ==============================================================================
+ * FOOTER-COLUMN----------------------------------------------------FOOTER-COLUMN */
+.footer-column {
+	width: 950px; 
+	background: url(../images/footer-column-bg.png) repeat-x #5b8a06; display: block;
+}
+.fc-left {
+	float: left;
+	width: 550px;
+}
+.fc-right {
+	float: right;
+	width: 400px;
+}
+/* TESTIMONIAL-------------------------------------------------------TESTIMONIAL */
+.testi-front {
+	float: left;
+	width: 325px; /*width: 350px;*/
+	padding: 10px 10px 10px 15px;
+}
+.tf-top {
+	height: 25px; /*height: 40px;*/
+	padding: 15px 0 0 50px;
+	background: url(../images/tf-top.png) left no-repeat transparent; display: block;
+		font-size: 13px !important;
+}
+.tf-top a{ color: #66603d !important; text-decoration: none !important; }
+.tf-top a:hover{ font-weight: bold; }
+.tf-row-top {
+	width: 325px; height: 5px;
+	background: url(../images/tf-row-top.png) no-repeat transparent; display: block;
+}
+.tf-row-bottom {
+	width: 325px; height: 5px;
+	background: url(../images/tf-row-bottom.png) no-repeat transparent; display: block;
+}
+.tf-row {
+	width: 305px; /*width: 325px;*/
+	padding: 10px;
+	background: url(../images/tf-row-bg.png) repeat-y transparent; display: block;
+	clear: both;
+}
+.tf-row img {
+	border: 2px solid #4b4524;
+	padding: 3px;
+}
+.tf-row .img {
+	float: left;
+	display: block;
+	background-color: #fff;
+	margin: 0 10px 0 0;
+}
+.tf-row h2 {
+	font-size: 10px !important;
+}
+.tf-row, .tf-row h1, .tf-row h2, .tf-row p {
+		color: #433e21 !important;
+}
+
+/* TOP-MEMBER & TOP-SPONSOR----------------------------TOP-MEMBER  & TOP-SPONSOR*/
+.top-member {
+	float: right;
+}
+.top-sponsor {
+	float: left;
+	border-right: 1px dotted #ddcd74;
+}
+.top-member, .top-sponsor {
+	width: 178px; /*width: 200px;*/
+	padding: 10px;
+		color: #eae7d7!important;
+	border-left: 1px dotted #ddcd74;
+}
+.stat-member-top {
+	width: 178px;
+	padding: 5px 0;
+		text-align: center;
+		color: #433e21 !important;
+		font-weight: bold;
+	border-bottom: 1px solid #597a0a;
+}
+.top-member ul, .top-sponsor ul {
+	list-style-type: decimal;
+	border-top: 1px solid #b2d363;
+	padding-left: 25px;
+}
+
+/* STATISTIK-----------------------------------------------------------STATISTIK */
+.statistik {
+	float: right;
+	width: 175px; /*width: 200px;*/
+	padding: 10px 15px 5px 10px;
+}
+.statistik-top {
+	width: 120px; height: 30px; /*idth: 175px; height: 45px;*/
+	padding: 15px 0 0 55px;
+	background: url(../images/statistik-top.png) no-repeat transparent; display: block;
+		font-size: 13px !important;
+		color: #66603d !important;
+}
+.statistik-bottom {
+	width: 175px; height: 5px;
+	background: url(../images/statistik-bottom.png) no-repeat transparent; display: block;
+}
+.statistik-info {
+	width: 155px; /*width: 175px*/
+	padding: 10px;
+	background: url(../images/statistik-bg.png) repeat-y transparent; display: block;
+}
+.statistik-info table {
+	width: 155px;
+		color: #eae7d7 !important;
+}
+
+/* ==============================================================================
+ * CREDIT------------------------------------------------------------------CREDIT */
+.credit {
+	width: 950px; 
+	background: url(../images/footer-column-bottom.png) top repeat-x transparent; display: block;
+	padding: 35px 0 0 0;
+		color: #8fa578 !important;
+		text-align: center;
+}
+.credit a { color: #8fa578 !important; text-decoration: none !important;}
+.credit a:hover {color: #4b7531 !important;}
+.credit ul { list-style-type: none; }
+.credit li { display: inline; }
+.credit li a{
+	padding: 0 5px;
+	border-right: 1px solid #6e8e55;
+}

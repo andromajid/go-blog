@@ -1,0 +1,203 @@
+@CHARSET "ISO-8859-1";
+/*
+ * =========================================================================
+ * CSS SIDEBAR LAYOUT STYLE SARANG SEMUT
+ * Copyrighted (c) 2010 EsoftDream.net
+ * =========================================================================
+ */
+
+/* =============================================================================
+ * 						GENERAL
+ * =============================================================================
+ */
+.sidebar-item {
+	width: 150px; /*width: 170px;*/
+	padding: 5px 9px 0 9px;
+	border-left: 1px solid #20470a;
+	border-right: 1px solid #20470a;
+	background-color: #c3bb8d;
+	clear: both;
+}
+.sidebar-top {
+	width: 130px; height: 28px; /*width: 170px; height: 40px;*/
+	padding: 12px 0 0 40px;
+	margin: -5px 0 0 -10px;
+	background: url(../images/sidebar-item-top.png) no-repeat #5ea60d; display: block;
+		color: #c6ff00 !important;
+}
+.sidebar-bottom {
+	width: 170px; height: 15px;
+	margin: 5px 0 0 -10px;
+	background: url(../images/sidebar-item-bottom.png) top no-repeat #3a7718; display: block;
+}
+.sidebar-item, .sidebar-item p{
+		color: #433e21 !important;
+		font-size: 10px !important;
+}
+.sidebar-item p{
+	text-align: justify;
+	border-bottom: 1px dotted #37210b;
+	line-height:120%;
+	padding: 5px 0;
+}
+.sidebar-item p a{
+		color: #ac880b;
+}
+.sidebar-item ul { list-style-type: none; text-align: center;}
+.sidebar-item li { border-bottom: 1px dotted #37210b; }
+
+/* ==============================================================================
+ * MAIN MENU------------------------------------------------------------MAIN MENU*/
+.main-menu {
+	width: 170px;
+}
+.main-menu-top {
+	width: 170px; height: 20px;
+	margin-top: -10px;
+	padding-bottom: 3px;
+	background: url(../images/mainmenu-title-bg.png) no-repeat transparent; display: block;
+	border-bottom: 1px dotted #84a075;
+}
+.main-menu ul {
+	width: 148px;
+	list-style-type: circle;
+		color: #fff !important;
+	padding-left: 22px;
+}
+.main-menu li a{
+	padding: 3px 0;
+		color: #fff !important;
+		text-decoration: none !important;
+	border-bottom: 1px solid #4b802f;
+	display: block;
+}
+.main-menu li a:hover {
+		font-weight: bold;
+	background-color: #4f8d16;
+}
+
+/* ==============================================================================
+ * MEMBER-LOGIN------------------------------------------------------MEMBER-LOGIN*/
+#member-login {
+	margin-left: -5px;
+}
+.login-field {
+	width: 140px; height: 25px; /*width: 150px; height: 25px;*/
+	background: url(../images/login-field-bg.png) no-repeat transparent; display: block;
+}
+.captcha-field {
+	width: 60px; height: 25px; /*width: 70px; height: 25px;*/
+	background: url(../images/captcha-field-bg.png) no-repeat transparent; display: block;
+}
+.login-field, .captcha-field {
+	padding: 0 5px;
+	border: none !important;
+		color: #a89e69 !important;
+		font-size: 10px !important;
+		text-align: center;
+}
+.login-btn {
+	width: 72px; height: 27px;
+	background: url(../images/login-btn.png) no-repeat transparent; display: block;
+	border: none !important;
+}
+.login-btn:hover {
+	background: url(../images/login-btn-hover.png) no-repeat transparent; display: block;
+}
+
+/* ==============================================================================
+ * CONTACT----------------------------------------------------------------CONTACT*/
+.contact {
+	width: 170px; 
+}
+.contact-top {
+	width: 170px; height: 15px;
+	background: url(../images/contact-top.png) no-repeat #67c306; display: block;
+}
+.contact-info {
+	width: 150px;
+	padding: 0 9px 5px 9px;
+	border-left: 1px solid #21420e;
+	border-right: 1px solid #21420e;
+	background: url(../images/contact-bg.png) repeat-x #398d0a; display: block;
+		color: #fff !important;
+		text-align: center !important;
+}
+.contact-info h1 {
+	font-size: 12px !important;
+		color: #fff !important;
+		text-align: center !important;
+		font-family: arial !important;
+		font-weight: bold !important;
+	border-bottom: 1px dotted #ccff00;
+}
+.contact-bottom {
+	width: 170px; height: 15px;
+	background: url(../images/contact-bottom.png) top no-repeat #3a7718; display: block;
+}
+
+/* ==============================================================================
+ * SUPPORT----------------------------------------------------------------SUPPORT*/
+.support {
+	width: 170px;
+}
+.support-top {
+	width: 135px; height: 27px; /*width: 170px; height: 45px;*/
+	padding: 18px 0 0 35px;
+	background: url(../images/support-top.png) no-repeat transparent; display: block;
+		color: #c6ff00 !important;
+}
+.support-info {
+	width: 150px;
+	padding: 10px;
+	background: url(../images/support-bg.png) repeat-y #b5d08e; display: block;
+}
+.support-bottom {
+	width: 170px; height: 15px;
+	background: url(../images/support-bottom.png) top no-repeat transparent; display: block;
+}
+.support-info table {
+	width: 150px; 
+		color: #433e21 !important;
+		font-size: 10px !important;
+}
+.support-info table td {
+	border-bottom: 1px dotted #433e21;
+	padding: 3px 0;
+}
+
+/* ==============================================================================
+ * REKENING--------------------------------------------------------------REKENING*/
+.rek-item {
+	width: 150px;
+	padding: 5px 0;
+		color: #433e21 !important;
+		font-size: 10px !important;
+	border-bottom: 1px dotted #433e21;
+	display: block;
+}
+.rek-item img {
+	float: left;
+	width: 48px;
+	padding-right: 2px;
+}
+.rek-item ul {
+	float: right;
+	width: 100px; display: block;
+}
+.rek-item li {
+	padding: 0;
+	border: none;
+	text-align: left;
+}
+
+/* ==============================================================================
+ * CEK KARTU------------------------------------------------------------CEK KARTU*/
+.cek-btn {
+	width: 72px; height: 27px;
+	background: url(../images/cek-btn.png) no-repeat transparent; display: block;
+	border: none !important;
+}
+.cek-btn:hover {
+	background: url(../images/cek-btn-hover.png) no-repeat transparent; display: block;
+}

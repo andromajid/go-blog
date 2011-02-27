@@ -1,0 +1,78 @@
+
+input.DatePicker{
+	display: block !important;
+	width: 100px !important;
+	padding: 3px 5px 3px 24px !important;
+	background: #fcfcfc url(date.gif) no-repeat top left !important;
+	cursor: pointer !important;
+	border:1px solid #999 !important;
+}
+/*
+input:focus.DatePicker{
+	background: #fffce9 url(datefocus.gif) no-repeat top left;
+}
+*/
+.dp_container{
+	position: relative !important;
+	padding: 0 !important;
+	z-index: 500 !important;
+}
+.dp_cal{
+	background-color: #fff !important;
+	border: 1px solid #0070bf !important;
+	position: absolute !important;
+	width: 177px !important;
+	top: 24px !important;
+	left: 0 !important;
+	margin: 0px 0px 3px 0px !important;
+}
+.dp_cal table{
+	width: 100% !important;
+	border-collapse: collapse !important;
+	border-spacing: 0 !important;
+}
+.dp_cal select{
+	margin: 2px 3px !important;
+	font-size: 11px !important;
+}
+.dp_cal select option{
+	padding: 1px 3px !important;
+}
+.dp_cal th,
+.dp_cal td{
+	width: 14.2857% !important;
+	text-align: center !important;
+	font-size: 11px !important;
+	padding: 2px 0 !important;
+}
+.dp_cal th{
+	border: solid #aad4f2 !important;
+	border-width: 1px 0 !important;
+	color: #797774 !important;
+	background: #daf2e6 !important;
+	font-weight: bold !important;
+}
+.dp_cal td{
+	cursor: pointer !important;
+}
+.dp_cal thead th{
+	background: #d9eefc !important;
+}
+.dp_cal td.dp_roll{
+	color: #000 !important;
+	background: #fff6bf !important;
+}
+/* must have this for the IE6 select box hiding */
+.dp_hide{
+	visibility: hidden !important;
+}
+.dp_empty{
+	background: #eee !important;
+}
+.dp_today{
+	background: #daf2e6 !important;
+}
+.dp_selected{
+	color: #fff !important;
+	background: #328dcf !important;
+}
