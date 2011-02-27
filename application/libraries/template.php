@@ -42,5 +42,10 @@ class template
     {
        return "application/views/{$this->theme}/";
     }
+    
+    public function get_template_full_url()
+    {
+       return $this->CI->config->item('base_url')."application/views/{$this->theme}/";
+    }
 }
 ?>

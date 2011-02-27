@@ -3,19 +3,28 @@ $no = 1;
 ?>
 <div id="contentContainer">
     <div id="content">
-     <form action="" method="post" name="list">
-      <input type="submit" name="form_add" value="Tambah" class="button" />&nbsp;
-      <input type="submit" name="publish" value="Publish" class="button" />&nbsp;
-      <input type="submit" name="unpublish" value="Unpublish" class="button" />&nbsp;
-      <input type="submit" name="delete" value="Delete" class="button" />
+    <div id="page-heading">
+		<h1>Add page</h1>
+	</div>
+     <!--  start actions-box ............................................... -->
+        <div id="actions-box" style="margin-right: 10px;">
+            <a href="" class="action-slider"></a>
+            <div id="actions-box-slider">
+                <a href="" class="action-edit">Edit</a>
+                <a href="" class="action-delete">Delete</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- end actions-box........... -->
+      <input type="submit" name="delete" value="Delete" class="form-submit" />
       <br /><br />
-      <table width="100%" border="0" cellspacing="1" cellpadding="2">
-        <tr class="eventHeader">
-          <th class="eventHeader" width="30"><input class="checkbox" type="checkbox" name="item" id="item" onclick="check_all('list', 'item', <?php echo $no;?>)" /></th>
-          <th width="30">#</th>
-          <th>Judul</th>
-          <th width="80">Publish</th>
-          <th width="80">Ubah</th>
+      <table width="100%" border="0" cellspacing="1" cellpadding="2" id="product-table">>
+        <tr>
+          <th class="table-header-check" width="30"><input class="checkbox" type="checkbox" name="item" id="item" onclick="check_all('list', 'item', <?php echo $no;?>)" /></th>
+          <th class="table-header-repeat line-left" width="30"><a href="">#</a></th>
+          <th class="table-header-repeat line-left"><a href="">Judul</a></th>
+          <th class="table-header-repeat line-left" width="80"><a href="">Publish</a></th>
+          <th class="table-header-repeat line-left" width="80"><a href="">Ubah</a></th>
         </tr>
 <?php
 if($page)
