@@ -7,6 +7,8 @@
 class template
 {
     public $CI = null;
+    private $extra_head_content = "";
+    
     public function __construct()
     {
        $this->CI = & get_instance();
@@ -16,6 +18,7 @@ class template
  */
     public function render($theme, $view, $data)
     {
+        $data['extra_head_content'] = $this->extra_head_content;
         $module = $this->get_router();//view partial berada di module apa?
         $this->theme = $theme;
         $data['view'] = $module."/".$view;//view yang akan di includekan
@@ -41,6 +44,22 @@ class template
     public function get_template_url()
     {
        return "application/views/{$this->theme}/";
+    }
+/**
+ * Method buat menambah css di extra head content
+ * harus berada di folder asset
+ */
+    public function add_css($css_name)
+    {
+        $this->extra_head_content .= "<link href=\"asset/css/{$css_name}\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />";
+    }
+    public function add_javascript($js_name)
+    {
+        $this->extra_head_content .= "<script src=\"asset/js/{$js_name}\" type=\"text/javascript\"></script>";
+    }
+    public function add_extra_head_content($content)
+    {
+        $this->extra_head_content .= $content;
     }
 }
 ?>
