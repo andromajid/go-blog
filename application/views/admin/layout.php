@@ -1,192 +1,301 @@
 <?php
- if ( ! defined('BASEPATH')) exit('No direct script access allowed');
- ?>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-		<title><?php echo isset($title)?$title:$this->config->item("project");?></title>
-		<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
-		<meta name="ProgId" content="FrontPage.Editor.Document">
-		<meta name="Microsoft Theme" content="none, default">
-		<meta name="Microsoft Border" content="none, default">
-                <script type="text/javascript" src="<?php echo base_url();?>web/addons/js/checkbox.js"></script>
-		<link href="<?php echo $this->config->item("themes_url")."/";?>admin/paging.css" rel="stylesheet" type="text/css">
-		<link href="<?php echo $this->config->item("themes_url")."/";?>admin/event.css" rel="stylesheet" type="text/css">
-		<link href="<?php echo $this->config->item("themes_url")."/";?>admin/standard.css" rel="stylesheet" type="text/css">
-		<style type="text/css">
-			.menu_top:a:link { text-decoration: none; }
-			.menu_top:a:hover { color: #FFFFFF; text-decoration: none; }
-			.menu_top:a:visited { text-decoration: none; }
-			.menu_top2:a:link { text-decoration: none; }
-			.menu_top2:a:hover { color: #000033; text-decoration: none;	}
-			.menu_top2:a:visited { text-decoration: none; }
-			.site_map:a:link { text-decoration: none; }
-			.site_map:a:hover { color: #FFFFFF; text-decoration: none; }
-			.site_map:a:visited { text-decoration: none; }
-			.body:a:link { color: #666666; text-decoration: none; font-weight: bold; }
-			.body:a:hover { color: #999999; text-decoration: none; font-weight: bold; }
-			.body:a:visited { text-decoration: none; color: #464646; font-weight: bold; }
-			.box:a:link { color: #333333; text-decoration: none; font-weight: bold; }
-			.box:a:hover { color: #999999; text-decoration: none; font-weight: bold; }
-			.box:a:visited { text-decoration: none; color: #FFFFFF; font-weight: bold; }
-			.body_header:a:link { text-decoration: none; }
-			.body_header:a:hover { color: #3C74A2; text-decoration: none; }
-			.body_header:a:visited { text-decoration: none; }
-			.sitemap { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; font-style: italic; }
-			.index { font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #FFFFFF; }
-			.judul { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; left: 20px; }
-			.judul:a:link { text-decoration: none; }
-			.judul:a:hover { color: #CCCCCC; text-decoration: none; }
-			.judul:a:visited { text-decoration: none; }
-			.links { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #194775; }
-			.links:a:link { text-decoration: none; }
-			.links:a:hover { color: #990000; text-decoration: none; }
-			.links:a:visited { text-decoration: none; }
-			.links2 { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #194775; font-weight: bold; }
-			.links2:a:link { text-decoration: none; }
-			.links2:a:hover { color: #990000; text-decoration: none; }
-			.links2:a:visited { text-decoration: none; }
-			.bold { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; }
-			.head { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bolder; color: #CCCCCC; }
-			.head2 { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bolder; font-style:italic; color: #f1f1f1; }
-			.judulbig { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; color: #FFFFFF; left: 20px; }
-			.judulthin { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #FFFFFF; left: 20px; font-weight: normal; }
-			.menu { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: lighter; }
-			.menu2 { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: lighter; }
-			.text { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; }
-			.textgray { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #666666; }
-			.fontGreen { color: #0a880a; }
-			.fontRed { color: #A42A27; }
-			.footerCell { padding:5px 0; }
-			.footercell a { color:#fff; }
-			.footercell a:hover { color:#ddd; }
-			.msgError { margin:0 0 10px 0; padding:15px 10px; border:1px dotted #A42A27; background:#feecec; color:#A42A27; font-size:9pt; }
-			.msgSuccess { margin:0 0 10px 0; padding:15px 10px; border:1px dotted #0a880a; background:#f5fbf5; color:#0a880a; font-size:9pt; }
-		</style>
-		<style type="text/css">@import url(include/date/calendar-win2k-1.css);</style>
-		<script type="text/javascript" src="include/date/calendar.js"></script>
-		<script type="text/javascript" src="include/date/lang/calendar-en.js"></script>
-		<script type="text/javascript" src="include/date/calendar-setup.js"></script>
-<?php
-$extra = "";
-$extra = empty($extra_head_content)?"":$extra_head_content;
-echo $extra;
+$theme_url = $this->template->get_template_full_url();
 ?>
-	</head>
-	<body>
-		<div align="center">
-			<center>
-				<table width=100% border=0 cellpadding=0 cellspacing=0 style="border-collapse: collapse" bordercolor="#111111">
-					<tr>
-						<td width="20%" bgcolor="#153F79" class="headerLeft"></td>
-						<td width="80%" height="75" bgcolor="#153F79" class="headerLeft"><br><span class="head2">buat admin</span><hr noshade size="1" color="#e1e1e1"></td>
-					</tr>
-					<tr>
-						<td colspan="2" bgcolor="#CCCCCC" class="headerBottom"><i><?php //buat message ?></i></td>
-					</tr>
-				</table>
-			</center>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Internet Dreams</title>
+<link rel="stylesheet" href="<?php echo $theme_url;?>css/screen.css" type="text/css" media="screen" title="default" />
+<!--[if IE]>
+<link rel="stylesheet" media="all" type="text/css" href="<?php echo $theme_url;?>css/pro_dropline_ie.css" />
+<![endif]-->
+
+<!--  jquery core -->
+<script src="<?php echo $theme_url;?>js/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
+
+<!--  checkbox styling script -->
+<script src="<?php echo $theme_url;?>js/jquery/ui.core.js" type="text/javascript"></script>
+<script src="<?php echo $theme_url;?>js/jquery/ui.checkbox.js" type="text/javascript"></script>
+<script src="<?php echo $theme_url;?>js/jquery/jquery.bind.js" type="text/javascript"></script>
+<script type="<?php echo $theme_url;?>text/javascript">
+$(function(){
+	$('input').checkBox();
+	$('#toggle-all').click(function(){
+ 	$('#toggle-all').toggleClass('toggle-checked');
+	$('#mainform input[type=checkbox]').checkBox('toggle');
+	return false;
+	});
+});
+</script>
+
+<![if !IE 7]>
+
+<!--  styled select box script version 1 -->
+<script src="<?php echo $theme_url;?>js/jquery/jquery.selectbox-0.5.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.styledselect').selectbox({ inputClass: "selectbox_styled" });
+});
+</script>
+
+
+<![endif]>
+
+<!--  styled select box script version 2 -->
+<script src="<?php echo $theme_url;?>js/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.styledselect_form_1').selectbox({ inputClass: "styledselect_form_1" });
+	$('.styledselect_form_2').selectbox({ inputClass: "styledselect_form_2" });
+});
+</script>
+
+<!--  styled select box script version 3 -->
+<script src="<?php echo $theme_url;?>js/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.styledselect_pages').selectbox({ inputClass: "styledselect_pages" });
+});
+</script>
+
+<!--  styled file upload script -->
+<script src="<?php echo $theme_url;?>js/jquery/jquery.filestyle.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+      $("input.file_1").filestyle({
+          image: "images/forms/choose-file.gif",
+          imageheight : 21,
+          imagewidth : 78,
+          width : 310
+      });
+  });
+</script>
+
+<!-- Custom jquery scripts -->
+<script src="<?php echo $theme_url;?>js/jquery/custom_jquery.js" type="text/javascript"></script>
+
+<!-- Tooltips -->
+<script src="<?php echo $theme_url;?>js/jquery/jquery.tooltip.js" type="text/javascript"></script>
+<script src="<?php echo $theme_url;?>js/jquery/jquery.dimensions.js" type="text/javascript"></script>
+<script type="<?php echo $theme_url;?>text/javascript">
+$(function() {
+	$('a.info-tooltip ').tooltip({
+		track: true,
+		delay: 0,
+		fixPNG: true,
+		showURL: false,
+		showBody: " - ",
+		top: -35,
+		left: 5
+	});
+});
+</script>
+
+
+<!--  date picker script -->
+<link rel="stylesheet" href="css/datePicker.css" type="text/css" />
+<script src="<?php echo $theme_url;?>js/jquery/date.js" type="text/javascript"></script>
+<script src="<?php echo $theme_url;?>js/jquery/jquery.datePicker.js" type="text/javascript"></script>
+<script type="<?php echo $theme_url;?>text/javascript" charset="utf-8">
+        $(function()
+{
+
+// initialise the "Select date" link
+$('#date-pick')
+	.datePicker(
+		// associate the link with a date picker
+		{
+			createButton:false,
+			startDate:'01/01/2005',
+			endDate:'31/12/2020'
+		}
+	).bind(
+		// when the link is clicked display the date picker
+		'click',
+		function()
+		{
+			updateSelects($(this).dpGetSelected()[0]);
+			$(this).dpDisplay();
+			return false;
+		}
+	).bind(
+		// when a date is selected update the SELECTs
+		'dateSelected',
+		function(e, selectedDate, $td, state)
+		{
+			updateSelects(selectedDate);
+		}
+	).bind(
+		'dpClosed',
+		function(e, selected)
+		{
+			updateSelects(selected[0]);
+		}
+	);
+
+var updateSelects = function (selectedDate)
+{
+	var selectedDate = new Date(selectedDate);
+	$('#d option[value=' + selectedDate.getDate() + ']').attr('selected', 'selected');
+	$('#m option[value=' + (selectedDate.getMonth()+1) + ']').attr('selected', 'selected');
+	$('#y option[value=' + (selectedDate.getFullYear()) + ']').attr('selected', 'selected');
+}
+// listen for when the selects are changed and update the picker
+$('#d, #m, #y')
+	.bind(
+		'change',
+		function()
+		{
+			var d = new Date(
+						$('#y').val(),
+						$('#m').val()-1,
+						$('#d').val()
+					);
+			$('#date-pick').dpSetSelected(d.asString());
+		}
+	);
+
+// default the position of the selects to today
+var today = new Date();
+updateSelects(today.getTime());
+
+// and update the datePicker to reflect it...
+$('#d').trigger('change');
+});
+</script>
+
+<!-- MUST BE THE LAST SCRIPT IN <HEAD></HEAD></HEAD> png fix -->
+<script src="<?php echo $theme_url;?>js/jquery/jquery.pngFix.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).pngFix( );
+});
+</script>
+</head>
+<body>
+<!-- Start: page-top-outer -->
+<div id="page-top-outer">
+
+<!-- Start: page-top -->
+<div id="page-top">
+
+	<!-- start logo -->
+	<div id="logo">
+	<a href=""><img src="<?php echo $theme_url;?>images/shared/logo.png" width="156" height="40" alt="" /></a>
+	</div>
+	<!-- end logo -->
+
+	<!--  start top-search -->
+	<div id="top-search">
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+		<td><input type="text" value="Search" onblur="if (this.value=='') { this.value='Search'; }" onfocus="if (this.value=='Search') { this.value=''; }" class="top-search-inp" /></td>
+		<td>
+		<select  class="styledselect">
+			<option value=""> All</option>
+			<option value=""> Products</option>
+			<option value=""> Categories</option>
+			<option value="">Clients</option>
+			<option value="">News</option>
+		</select>
+		</td>
+		<td>
+		<input type="image" src="<?php echo $theme_url;?>images/shared/top_search_btn.gif"  />
+		</td>
+		</tr>
+		</table>
+	</div>
+ 	<!--  end top-search -->
+ 	<div class="clear"></div>
+
+</div>
+<!-- End: page-top -->
+
+</div>
+<!-- End: page-top-outer -->
+
+<div class="clear">&nbsp;</div>
+
+<!--  start nav-outer-repeat................................................................................................. START -->
+<div class="nav-outer-repeat">
+<!--  start nav-outer -->
+<div class="nav-outer">
+
+		<!-- start nav-right -->
+		<div id="nav-right">
+
+			<div class="nav-divider">&nbsp;</div>
+			<div class="showhide-account"><img src="<?php echo $theme_url;?>images/shared/nav/nav_myaccount.gif" width="93" height="14" alt="" /></div>
+			<div class="nav-divider">&nbsp;</div>
+			<a href="" id="logout"><img src="<?php echo $theme_url;?>images/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
+			<div class="clear">&nbsp;</div>
+
+			<!--  start account-content -->
+			<div class="account-content">
+			<div class="account-drop-inner">
+				<a href="" id="acc-settings">Settings</a>
+				<div class="clear">&nbsp;</div>
+				<div class="acc-line">&nbsp;</div>
+				<a href="" id="acc-details">Personal details </a>
+				<div class="clear">&nbsp;</div>
+				<div class="acc-line">&nbsp;</div>
+				<a href="" id="acc-project">Project details</a>
+				<div class="clear">&nbsp;</div>
+				<div class="acc-line">&nbsp;</div>
+				<a href="" id="acc-inbox">Inbox</a>
+				<div class="clear">&nbsp;</div>
+				<div class="acc-line">&nbsp;</div>
+				<a href="" id="acc-stats">Statistics</a>
+			</div>
+			</div>
+			<!--  end account-content -->
+
 		</div>
+		<!-- end nav-right -->
 
-		<div align="center">
-			<center>
-				<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber1">
-					<tr>
-						<td width="210" class="noName01" valign="top">
-							<div id=leftSide>
-                                                            <style type="text/css">
-                                                                .userMenu th
-                                                                {
-                                                                        padding-left:10px;
-                                                                        background-color: #EEEEEE;
-                                                                        color:#A42A27;
-                                                                        border-bottom: 1px solid #E0E0E0;
-                                                                        height:25px;
-                                                                        vertical-align:middle;
-                                                                        font-size:13px;
-                                                                        font-weight:600px;
-                                                                }
 
-                                                                .userMenu td
-                                                                {
-                                                                        padding-left:5px;
-                                                                        background-color: #EEEEEE;
-                                                                        color:#A42A27;
-                                                                        border-bottom: 1px solid #E0E0E0;
-                                                                        height:25px;
-                                                                        vertical-align:middle;
-                                                                        font-family: Trebuchet MS, Arial, Helvetica;
-                                                                        font-size:13px;
-                                                                        font-weight:600px;
-                                                                }
-
-                                                                a.userMenu { color:#13B6EC; font-weight:bold; }
-                                                                a.userMenu:hover{ color: #003366; text-decoration:underline; }
-                                                                a.userLink { color:#A42A27; font-weight:600px; }
-                                                                a.userLink:hover { color: #003366; text-decoration:underline; }
-                                                                a.subLink { color:#A42A27; font-size:11px; font-weight:600px; }
-                                                                a.subLink:hover { color: #003366; text-decoration:underline; }
-                                                                </style>
-                                                                <table border="0" width="99%" class="userMenu">
-                                                                <tr>
-                                                                        <th width="20"><a class="userLink" href="index.php?do=home_admin.main"><img src="<?php echo $this->config->item("themes_url")."/";?>admin/images/info.gif" border="0"></a></th>
-                                                                        <td colspan="2"><a class="userLink" href="index.php?do=home_admin.main">Home</a></td>
-                                                                </tr>
-<?php widget::run("widget_menu");?>
-                                                                <tr><td colspan="3">&nbsp;</td></tr>
-                                                                <tr>
-                                                                        <th><a href="<?php echo base_url()?>system/logout"><img src="<?php echo $this->config->item("themes_url")."/";?>admin/images/logout.gif" border="0"></a></th>
-                                                                        <td colspan="2"><a href="<?php echo base_url()?>system/logout"><font color="#A42A27">[ Logout ]</font></a></td>
-                                                                </tr>
-                                                        </table>
-							</div>
-						</td>
-						<td class="noName02" valign="top" bgcolor="#e9e9e9">
-						<!-- Awal Content -->
-							<table align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
-								<tbody>
-									<tr>
-										<td background="<?php echo $this->config->item("themes_url")."/";?>admin/images/layout_r4_c4.gif" valign="top"><img src="<?php echo $this->config->item("themes_url")."/";?>admin/images/main_kiri_atas.gif" height="11" width="7"></td>
-										<td bgcolor="#ffffff" valign="top" width="100%">
-											<table border="0" cellpadding="0" cellspacing="0" width="100%">
-												<tbody>
-													<tr><td background="<?php echo $this->config->item("themes_url")."/";?>admin/images/main_tengah_atas.gif"><img src="<?php echo $this->config->item("themes_url")."/";?>admin/images/spacer.gif" alt="" border="0" height="11" width="1"></td></tr>
-													<tr><td><div id=mainPage>
-                                                                                                        <?php
-                                                                                                        echo $this->session->flashdata('pesan')?$this->session->flashdata('pesan'):"";
-                                                                                                        $error = $error == ""?"":"<div class=\"msgErrror\">".$error."</div>";
-                                                                                                        $pesan = $pesan==""?"":"<div class=\"msgSucsess\">".$pesan."</div>";
-                                                                                                        echo $error; echo $pesan;
-                                                                                                        ?>
-                                                                                                        <br /><?php $this->load->view($view);?></div></td></tr>
-													<tr><td>&nbsp;</td></tr>
-												</tbody>
-											</table>
-										</td>
-										<td background="<?php echo $this->config->item("themes_url")."/";?>admin/images/layout_r4_c6.gif" valign="top"><img src="<?php echo $this->config->item("themes_url")."/";?>admin/images/main_kanan_atas.gif" height="11" width="14"></td>
-									</tr>
-									<tr>
-										<td valign="top"><img src="<?php echo $this->config->item("themes_url")."/";?>admin/images/layout_r5_c4.gif" alt="" border="0" height="13" width="7"></td>
-										<td background="images/layout_r5_c5.gif" width="100%"><img src="<?php echo $this->config->item("themes_url")."/";?>admin/images/spacer.gif" alt="" border="0" height="13" width="1"></td>
-										<td valign="top"><img src="<?php echo $this->config->item("themes_url")."/";?>admin/images/layout_r5_c6.gif" alt="" border="0" height="13" width="14"></td>
-									</tr>
-								</tbody>
-							</table>
-						<!-- Akhir Content -->
-						</td>
-					</tr>
-				</table>
-			</center>
+		<!--  start nav -->
+		<div class="nav">
+		<div class="table">
+<?php widget::run('widget_menu');?>
+		<div class="clear"></div>
 		</div>
-
-		<div align="center">
-			<center>
-				<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber2">
-					<tr>
-						<td width="100%" valign="middle" bgcolor="#153F79" class="footerCell"><?php //emboh ra ngerti ?></td>
-					</tr>
-				</table>
-			</center>
+		<div class="clear"></div>
 		</div>
-	</body>
+		<!--  start nav -->
+
+</div>
+<div class="clear"></div>
+<!--  start nav-outer -->
+</div>
+<!--  start nav-outer-repeat................................................... END -->
+
+ <div class="clear"></div>
+
+<!-- start content-outer ........................................................................................................................START -->
+<div id="content-outer">
+<!-- start content -->
+<div id="content">
+    <?php $this->load->view($view);?>
+</div>
+<!--  end content -->
+<div class="clear">&nbsp;</div>
+</div>
+<!--  end content-outer........................................................END -->
+
+<div class="clear">&nbsp;</div>
+
+<!-- start footer -->
+<div id="footer">
+	<!--  start footer-left -->
+	<div id="footer-left">
+
+	Admin Skin &copy; Copyright Internet Dreams Ltd. <span id="spanYear"></span> <a href="">www.netdreams.co.uk</a>. All rights reserved.</div>
+	<!--  end footer-left -->
+	<div class="clear">&nbsp;</div>
+</div>
+<!-- end footer -->
+
+</body>
 </html>
