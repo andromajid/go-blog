@@ -59,7 +59,7 @@ class template
     }
     public function add_javascript($js_name)
     {
-        $this->extra_head_content .= "<script src=\"asset/js/{$js_name}\" type=\"text/javascript\"></script>";
+        $this->extra_head_content .= "<script src=\"asset/js/{$js_name}.js\" type=\"text/javascript\"></script>";
     }
     public function add_extra_head_content($content)
     {
@@ -71,6 +71,10 @@ class template
     public function get_image($image_name)
     {
       return "<img src=\"".$this->CI->config->item('base_url')."asset/image/".$image_name."\" alt=\"".$image_name."\" />";
+    }
+    public function get_javascript($javascript)
+    {
+        return <script src=\"asset/js/{$javascript}.js\" type=\"text/javascript\"></script>";
     }
 }
 ?>
