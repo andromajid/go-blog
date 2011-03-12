@@ -74,7 +74,7 @@ class template
     }
     public function get_javascript($javascript)
     {
-        return <script src=\"asset/js/{$javascript}.js\" type=\"text/javascript\"></script>";
+        return "<script src=\"asset/js/{$javascript}.js\" type=\"text/javascript\"></script>";
     }
 }
 ?>
