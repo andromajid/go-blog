@@ -73,6 +73,8 @@ function xinha($textarea = array() , $jenis = "")
  ];
 
    xinha_config = xinha_config ? xinha_config() : new HTMLArea.Config();
+    xinha_config.height = 200;
+    xinha_config.width = 400;
     <?php
  if($jenis == "small")
  {
@@ -97,6 +99,10 @@ function xinha($textarea = array() , $jenis = "")
  }
 else
 {
+  $IMConfig = array();
+  $IMConfig['images_url'] = $obj->config->item('base_url')."asset/image/";
+  require_once '../../web/addons/xinha/contrib/php-xinha.php';
+  xinha_pass_to_php_backend($IMConfig);
 ?>
     xinha_config.toolbar =
  [

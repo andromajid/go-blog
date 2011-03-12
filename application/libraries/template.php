@@ -45,6 +45,10 @@ class template
     {
        return "application/views/{$this->theme}/";
     }
+    public function get_template_full_url()
+    {
+       return $this->CI->config->item('base_url')."application/views/{$this->theme}/";
+    }
 /**
  * Method buat menambah css di extra head content
  * harus berada di folder asset
@@ -60,6 +64,13 @@ class template
     public function add_extra_head_content($content)
     {
         $this->extra_head_content .= $content;
+    }
+/**
+ * Method di bawah buat ambil asset
+ */
+    public function get_image($image_name)
+    {
+      return "<img src=\"".$this->CI->config->item('base_url')."asset/image/".$image_name."\" alt=\"".$image_name."\" />";
     }
 }
 ?>

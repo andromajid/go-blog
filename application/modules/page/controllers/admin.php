@@ -70,7 +70,7 @@ class admin extends Admin_Controller
         $this->data['page'] = $this->page_model->get_page($paging['limit'][0],$paging['limit'][1]);
         $this->data['paging'] = $paging['links'];
         //template($this->jenis,"admin_page_list",$this->data);
-        $this->template->render($this->jenis,"admin_page_list",$this->data);
+        $this->template->render("my_admin","admin_page_list",$this->data);
     }
 /*
  * page generator buat halaman member(VOFFICE)
@@ -109,7 +109,8 @@ class admin extends Admin_Controller
         }
         $this->load->helper('xinha');
         $this->data['extra_head_content'] = xinha(array('page_content'));//ambil tinymce
-        template($this->jenis,"admin_add_page",$this->data);
+        //template($this->jenis,"admin_add_page",$this->data);
+        $this->template->render("my_admin","admin_add_page",$this->data);
     }
 
     public function edit($type,$id)
@@ -129,8 +130,10 @@ class admin extends Admin_Controller
         }
         $this->load->helper('xinha');
         $this->data['extra_head_content'] = xinha(array('page_content'));//ambil tinymce
+        $this->template->add_extra_head_content($this->data['extra_head_content']);
         $this->data['page'] = $this->page_model->get_page_by_id($id);
-        template($this->jenis,"admin_page_edit",$this->data);
+        //template($this->jenis,"admin_page_edit",$this->data);
+        $this->template->render("my_admin","admin_add_page",$this->data);
     }
 }
 ?>

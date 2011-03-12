@@ -9,7 +9,7 @@
 		<meta name="ProgId" content="FrontPage.Editor.Document">
 		<meta name="Microsoft Theme" content="none, default">
 		<meta name="Microsoft Border" content="none, default">
-                <script type="text/javascript" src="<?php echo base_url();?>web/addons/js/checkbox.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>web/addons/js/checkbox.js"></script>
 		<link href="<?php echo $this->config->item("themes_url")."/";?>admin/paging.css" rel="stylesheet" type="text/css">
 		<link href="<?php echo $this->config->item("themes_url")."/";?>admin/event.css" rel="stylesheet" type="text/css">
 		<link href="<?php echo $this->config->item("themes_url")."/";?>admin/standard.css" rel="stylesheet" type="text/css">
