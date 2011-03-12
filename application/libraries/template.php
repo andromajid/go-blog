@@ -70,11 +70,15 @@ class template
  */
     public function get_image($image_name)
     {
-      return "<img src=\"".$this->CI->config->item('base_url')."asset/image/".$image_name."\" alt=\"".$image_name."\" />";
+        echo "<img src=\"".$this->CI->config->item('base_url')."asset/image/".$image_name."\" alt=\"".$image_name."\" />";
     }
     public function get_javascript($javascript)
     {
-        return "<script src=\"".$this->CI->config->item('base_url')."asset/js/{$javascript}.js\" type=\"text/javascript\"></script>";
+        echo "<script src=\"".$this->CI->config->item('base_url')."asset/js/{$javascript}.js\" type=\"text/javascript\"></script>";
+    }
+    public function get_css($css_name)
+    {
+        echo "<link href=\"".$this->CI->config->item('base_url')."asset/css/{$css_name}\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />";
     }
 }
 ?>
