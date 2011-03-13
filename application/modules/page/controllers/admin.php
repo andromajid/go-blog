@@ -133,7 +133,7 @@ class admin extends Admin_Controller
         $this->template->add_extra_head_content($this->data['extra_head_content']);
         $this->data['page'] = $this->page_model->get_page_by_id($id);
         //template($this->jenis,"admin_page_edit",$this->data);
-        $this->template->render("my_admin","admin_add_page",$this->data);
+        $this->template->render("my_admin","admin_page_edit",$this->data);
     }
 }
 ?>

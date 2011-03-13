@@ -70,7 +70,7 @@ class template
  */
     public function get_image($image_name)
     {
-        echo "<img src=\"".$this->CI->config->item('base_url')."asset/image/".$image_name."\" alt=\"".$image_name."\" />";
+        return "<img src=\"".$this->CI->config->item('base_url')."asset/image/".$image_name."\" alt=\"".$image_name."\" />";
     }
     public function get_javascript($javascript)
     {

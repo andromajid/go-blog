@@ -73,16 +73,14 @@ function xinha($textarea = array() , $jenis = "")
  ];
 
    xinha_config = xinha_config ? xinha_config() : new HTMLArea.Config();
-    xinha_config.height = 200;
-    xinha_config.width = 400;
-    <?php
+ <?php
  if($jenis == "small")
  {
  ?>
      xinha_config.toolbar =
-	  [
-	      ["createlink","bold","italic","underline","strikethrough","undo","redo"]
-	  ];
+      [
+          ["createlink","bold","italic","underline","strikethrough","undo","redo"]
+      ];
       xinha_config.formatblock =
       {
           "&mdash; format &mdash;"  : "",
@@ -99,11 +97,21 @@ function xinha($textarea = array() , $jenis = "")
  }
 else
 {
-  $IMConfig = array();
+      $IMConfig = array();
   $IMConfig['images_url'] = $obj->config->item('base_url')."asset/image/";
-  require_once '../../web/addons/xinha/contrib/php-xinha.php';
-  xinha_pass_to_php_backend($IMConfig);
+  $IMConfig['images_dir'] = FCPATH."asset/image/";
+
 ?>
+with(xinha_config.ImageManager)
+{
+<?php
+  if(file_exists(FCPATH.'web/addons/xinha/contrib/php-xinha.php'))
+  {
+    require_once FCPATH.'web/addons/xinha/contrib/php-xinha.php';
+    xinha_pass_to_php_backend($IMConfig);
+  }
+ ?>
+ }
     xinha_config.toolbar =
  [
    ["popupeditor"],
@@ -115,7 +123,10 @@ else
    ["killword","clearfonts","removeformat","toggleborders","splitblock","lefttoright", "righttoleft"],
    ["htmlmode","showhelp","about"]
  ];
+//  xinha_config.height = '0px';
+//  xinha_config.width = '10px';
 <?php
+  
 }
  ?>
     xinha_config.flowToolbars = true;
