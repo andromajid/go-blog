@@ -2,9 +2,8 @@
 if($category)
 {
 ?>
-<div id="contentContainer">
-  <div id="content">
-    <h1>Ubah Kategori Galeri</h1>
+<div id="box">
+    <h3>Ubah Kategori Galeri</h3>
     <form action="" method="post" name="admin_form" enctype="multipart/form-data">
       <table class="eventAdd" width="100%" cellpadding="3" cellspacing="0" border="0">
         <tr>
@@ -21,7 +20,6 @@ if($category)
         </tr>
       </table>
     </form>
-  </div>
 </div>
 <?php
 }

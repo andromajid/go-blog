@@ -99,7 +99,7 @@ class admin extends Admin_Controller
         }
         $menu_parent = $this->uri->segment(5,0);//jika ngga ada uri segment yang ke tiga maka defaultnya 0
         $this->data['list_menu'] = $this->menu_model->get_admin_menu($menu_parent);
-        template($this->jenis,"admin_menu_list",$this->data);
+        $this->template->render("my_admin","admin_menu_list",$this->data);
     }
 /*-------------------------------------------------------------------------------
  * Tambah Menu
@@ -141,7 +141,7 @@ class admin extends Admin_Controller
                 else $this->data['error'] = "data gagal ditambah";
             }
         }
-        template($this->jenis,"admin_add_menu",$this->data);
+        $this->template->render("my_admin","admin_add_menu",$this->data);
     }
 /*------------------------------------------------------------------------------
  * Edit Menu

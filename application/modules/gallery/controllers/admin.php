@@ -70,7 +70,7 @@ class admin extends Admin_Controller
         $paging = create_pagination("admin/gallery/daftar/", $total,$show,4);
         $this->data['gallery'] = $this->gallery_model->get_paging_gallery($paging['limit'][0],$paging['limit'][1]);
         $this->data['paging'] = $paging['links'];
-        template($this->jenis,"admin_gallery_list",$this->data);
+        $this->template->render("my_admin","admin_gallery_list",$this->data);
     }
     public function gallery_add()
     {
@@ -95,7 +95,7 @@ class admin extends Admin_Controller
                 /*
                  * setingan upload gambar
                  */
-                $path = realpath( FCPATH.'upload/images/gallery/');
+                $path = realpath( FCPATH.'asset/image');
                 $config['upload_path'] = $path;
 				$config['allowed_types'] = 'gif|jpg|png';
 				$config['max_size']	= '1000';
@@ -121,7 +121,7 @@ class admin extends Admin_Controller
             }
         }
         $this->data['category'] = $this->gallery_model->get_category();
-        template($this->jenis,"admin_gallery_add",$this->data);
+        $this->template->render("my_admin","admin_gallery_add",$this->data);
     }
     public function edit($gallery_id)
     {
@@ -146,7 +146,7 @@ class admin extends Admin_Controller
                 $img = array();
                 if($_FILES['image']['tmp_name'] != "")
                 {
-                    $path = realpath( FCPATH.'upload/images/gallery/');
+                    $path = realpath( FCPATH.'asset/image');
                     $config['upload_path'] = $path;
                     $config['allowed_types'] = 'gif|jpg|png';
                     $config['max_size']	= '1000';
@@ -160,8 +160,8 @@ class admin extends Admin_Controller
                     {
                        $data = $this->upload->data();
                        $this->image_resize($data);
-                       unlink($path.$this->input->post('image_old'));
-                       unlink($path."thumb_".$this->input->post('image_old'));
+                       @unlink($path."/".$this->input->post('image_old'));
+                       @unlink($path."/"."thumb_".$this->input->post('image_old'));
                        $img = array('gallery_image' => $data['file_name']);
                     }
                 }
@@ -177,7 +177,7 @@ class admin extends Admin_Controller
         }
         $this->data['kategori'] = $this->gallery_model->get_category();
         $this->data['row'] = $this->gallery_model->get_gallery_by_id($gallery_id);
-        template($this->jenis,"admin_gallery_edit",$this->data);
+        $this->template->render("my_admin","admin_gallery_edit",$this->data);
     }
     
     /*==========================================================================

@@ -46,6 +46,12 @@ function check_all(form_name, input_name, start)
 
         <div id="wrapper">
             <div id="content">
+ <?php
+echo $this->session->flashdata('pesan')?$this->session->flashdata('pesan'):"";
+$error = $error == ""?"":"<div class=\"msgErrror\">".$error."</div>";
+$pesan = $pesan==""?"":"<div class=\"msgSucsess\">".$pesan."</div>";
+echo $error; echo $pesan;
+?>
               <!-- content go-blog-->
               <?php $this->load->view($view);?>
             </div>

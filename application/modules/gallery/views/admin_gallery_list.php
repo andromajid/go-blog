@@ -1,9 +1,8 @@
 <?php
 $no = 1;
 ?>
-<div id="contentContainer">
-  <div id="content">
-    <h1>Daftar Galeri</h1>
+<div id="box">
+    <h3>Daftar Galeri</h3>
     <form action="" method="post" name="list">
       <input type="submit" name="form_add" value="Tambah" class="button" />&nbsp;
       <input type="submit" name="publish" value="Publish" class="button" />&nbsp;
@@ -32,7 +31,7 @@ if($gallery)
         <tr class="eventList">
             <td align="center"><input type="checkbox" name="item[<?php echo $no; ?>]" id="item[<?php echo $no; ?>]" value="<?php echo $row_gallery['gallery_id']; ?>"></td>
             <td align="right"><?php echo $no; ?>.</td>
-            <td align="center"><img src="<?php echo base_url()."upload/images/gallery/".$image_source;?>" alt="<?php echo $image_source;?>" /></td>
+            <td align="center"><?php echo $this->template->get_image($image_source);?></td>
             <td><?php echo $row_gallery['gallery_title']; ?></td>
             <td><?php echo $row_gallery['gallery_description']; ?></td>
             <td align="center"><img src="<?php echo $this->config->item('themes_url');?>/admin/images/<?php echo $is_active; ?>" alt="<?php echo $is_active; ?>" /></td>
@@ -46,7 +45,6 @@ if($gallery)
       </table>
     </form>
   </div>
-</div>
 <?php
 if($paging) echo $paging;
 ?>

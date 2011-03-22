@@ -56,7 +56,7 @@ class admin_category extends Admin_Controller
             }
         }
         $this->data['category'] = $this->gallery_model->get_category();
-        template($this->jenis,"admin_category_list",$this->data);
+        $this->template->render("my_admin","admin_category_list",$this->data);
     }
 
     public function add()
@@ -74,7 +74,7 @@ class admin_category extends Admin_Controller
                 else $this->data['error'] = "data kategori gagal ditambah";
             }
         }
-        template($this->jenis,"admin_category_add",$this->data);
+        $this->template->render("my_admin","admin_category_add",$this->data);
     }
 
     public function edit($id)

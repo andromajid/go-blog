@@ -1,9 +1,8 @@
 <?php
 $no = 1;
 ?>
-<div id="contentContainer">
-  <div id="content">
-    <h1>Daftar Kategori Galeri</h1>
+<div id="box">
+    <h3>Daftar Kategori Galeri</h3>
     <form action="" method="post" name="list">
       <input type="submit" name="form_add" value="Tambah" class="button" />&nbsp;
       <input type="submit" name="publish" value="Publish" class="button" />&nbsp;
@@ -41,5 +40,4 @@ if($category)
 ?>
       </table>
     </form>
-  </div>
 </div>

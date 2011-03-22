@@ -11,7 +11,7 @@
           <th>Isi Halaman</th>
           <td>
               <div id="xinha">
-                  <textarea name="page_content" id="page_content" rows="30" cols="150"></textarea>
+                  <textarea name="page_content" id="page_content"></textarea>
             </div>
           </td>
         </tr>

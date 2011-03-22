@@ -24,8 +24,9 @@ class admin extends Admin_Controller
         $this->data['extra_head_content'] .= "<script type=\"text/javascript\" src=\"".base_url()."web/addons/js/jquery-1.3.2.min.js\"></script>";
         $this->data['extra_head_content'] .= "<script type=\"text/javascript\" src=\"".base_url()."web/addons/js/jqueryui.js\"></script>";
         $this->data['extra_head_content'] .= "<script type=\"text/javascript\" src=\"".base_url()."web/addons/js/widget.js\"></script>";
+        $this->template->add_extra_head_content($this->data['extra_head_content']);
         $this->data['widget'] = $this->widget_model->get_all_widget();
-        template($this->jenis,"admin_widget_list",$this->data);
+        $this->template->render("my_admin","admin_widget_list",$this->data);
     }
 
     public function ajax_change_widget()

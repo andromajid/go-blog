@@ -1,6 +1,5 @@
-<div id="contentContainer">
-  <div id="content">
-    <h1>Tambah Kategori Galeri</h1>
+<div id="box">
+    <h3>Tambah Kategori Galeri</h3>
     <form action="" method="post" name="admin_form">
       <table class="eventAdd" width="100%" cellpadding="3" cellspacing="0" border="0">
         <tr>
@@ -17,5 +16,4 @@
         </tr>
       </table>
     </form>
-  </div>
 </div>

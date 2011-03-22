@@ -1,10 +1,9 @@
 <?php
-$path = realpath( FCPATH.'upload/images/gallery/');
-$old_image = ($row['gallery_image'] != '' && file_exists($path.$row['gallery_image'])) ? '<a href="'.base_url().'upload/images/gallery/'.$row['gallery_image'].'" target="_blank">'.$row['gallery_image'].'</a><br /><br />' : '';
+$path = realpath( FCPATH.'asset/image/');
+$old_image = (file_exists($path."/".$row['gallery_image'])) ? '<a href="'.base_url().'asset/image/'.$row['gallery_image'].'" target="_blank">'.$row['gallery_image'].'</a><br /><br />' : '';
 ?>
-<div id="contentContainer">
-  <div id="content">
-    <h1>Ubah Galeri</h1>
+<div id="box">
+    <h3>Ubah Galeri</h3>
     <form action="" method="post" name="admin_form" id="admin_form" enctype="multipart/form-data">
       <input type="hidden" name="image_old" value="<?php echo $row['gallery_image']; ?>" />
       <table class="eventAdd" width="100%" cellpadding="3" cellspacing="0" border="0">
@@ -42,5 +41,4 @@ $old_image = ($row['gallery_image'] != '' && file_exists($path.$row['gallery_ima
         </tr>
       </table>
     </form>
-  </div>
 </div>

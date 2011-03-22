@@ -2,9 +2,8 @@
 if( ! defined('BASEPATH')) exit('No direct script access allowed');
 $x = 1;
 ?>
-<div id="contentContainer">
-    <div id="content">
-        <h1>Menu <?php echo $this->uri->segment(4);?></h1>
+<div id="box">
+        <h3>Menu <?php echo $this->uri->segment(4);?></h3>
          <form action="" method="post" name="list">
              <input type="submit" name="form_add" value="Tambah" class="button" />&nbsp;
              <input type="submit" name="publish" value="Publish" class="button" />&nbsp;
@@ -48,5 +47,4 @@ $x = 1;
                 ?>
              </table>
          </form>
-    </div>
 </div>

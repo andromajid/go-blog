@@ -1,5 +1,4 @@
-<div id="contentContainer">
-  <div id="content">
+<div id="box">
     <h1>Tambah Galeri</h1>
     
     <form action="" method="post" name="admin_form" enctype="multipart/form-data">
@@ -38,5 +37,4 @@ if($category)
         </tr>
       </table>
     </form>
-  </div>
 </div>

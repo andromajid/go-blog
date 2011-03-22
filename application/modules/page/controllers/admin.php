@@ -109,6 +109,7 @@ class admin extends Admin_Controller
         }
         $this->load->helper('xinha');
         $this->data['extra_head_content'] = xinha(array('page_content'));//ambil tinymce
+        $this->template->add_extra_head_content($this->data['extra_head_content']);
         //template($this->jenis,"admin_add_page",$this->data);
         $this->template->render("my_admin","admin_add_page",$this->data);
     }
